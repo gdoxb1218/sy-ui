@@ -1,6 +1,6 @@
 
 #SY-UI v0.1 (MIT)
-## Get started with SY-UI
+### Get started with SY-UI
 ```
 int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine, int nCmdShow)
 {
@@ -26,8 +26,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine
 }
 ```
 
-## Create a dialog with Stage control and show it
-## then we use the macro REG_DRAG to make it dragable 
+### Create a dialog with Stage control and show it,then we use the macro REG_DRAG to make it dragable 
 ```
 void init()
 {
@@ -42,7 +41,7 @@ void init()
 }
 ```
 
-#The layout.xml
+### The layout.xml
 ```
 <?xml version="1.0" encoding="utf-8"?>  
 <Dlg id="0">
@@ -57,7 +56,7 @@ void init()
 </Dlg>
 ```
 
-#some macros make it simple :)
+### some macros make it simple :)
 ```
 //common
 #define ADD_EVENT_LISTENER(a,b,c) iObject->getChildByName(L##a)->addEventListener(b,	(LPGUI_EVENT_FUNC)&c)
