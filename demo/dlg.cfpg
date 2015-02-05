@@ -1,0 +1,13 @@
+<Projects version="2.0">
+	<Project active="1">dlg.cfp</Project>
+	<File active="0">..\GUI\com\GCore.h</File>
+	<File active="0">..\GUI\com\GObject.h</File>
+	<File active="0">..\GUI\com\GGraphics.h</File>
+	<File active="0">..\GUI\com\GHook.h</File>
+	<File active="0">..\GUI\com\GImageRes.h</File>
+	<File active="0">..\GUI\GUI.h</File>
+	<File active="0">dlg.cpp</File>
+	<File active="0">..\GUI\com\GXml.h</File>
+	<File active="1">..\GUI\com\GTest.h</File>
+	<File active="0">..\GUI\com\GStruct.h</File>
+</Projects>

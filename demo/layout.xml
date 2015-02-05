@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="gb2312"?>  
+<Dlg id="0">
+<STAGE name="login" resID="100" left="400" top="200" width="420" height="340">
+<PANEL left="0" top="0" width="420" height="340" name="login_panel">
+	<PANEL  name="loading" resID="60001" left="170" top="150" width="32" height="32" />
+	<BUTTON name="login_close" left="375" top="32" resID="2" />
+	<BUTTON name="login_min" left="350" top="32" resID="1" />
+	<COMBOBOX name="login_name" left="80" top="140" width="190" height="24" resID="101,102" />	
+	<TEXTBOX name="login_pass" left="80" top="170" width="190" height="24" resID="101" />
+	<CHECKBOX name="login_savepass" left="80" top="200" width="80" height="20" resID="3" text="保存密码" />
+	<CHECKBOX name="login_auto" left="200" top="200" width="80" height="20" resID="3"  text="自动登录" />
+	<BUTTON name="login_login" left="90" top="260" resID="103" />
+	<LABEL name="reglabel" left="280" top="140" width="190" height="24" text="注册用户" link="http://www.google.com" />
+	<LABEL name="passlabel" left="280" top="170" width="190" height="24" text="忘记密码" link="http://www.google.com" />
+</PANEL>
+</STAGE>
+
+
+<STAGE name="main" resID="200" left="100" top="100" width="830" height="630">
+<PANEL left="0" top="0" width="830" height="630" name="main_panel">
+	<BUTTON name="main_close" left="780" top="32" resID="2" />
+	<BUTTON name="main_min" left="755" top="32" resID="1" />
+	<LABEL name="main_test" left="280" top="170" width="190" height="24" />	
+	<WEB name="main_web" left="0" top="330" width="440" height="200" />
+</PANEL>
+</STAGE>
+
+
+
+
+<STAGE name="channel" resID="0" left="30" top="100" width="1200" height="630">
+<PANEL name="leftDlg" resID="313" left="0" top="0" width="190" height="630">
+<CHECKBOX name="listen" resID="321" left="42" top="420" />
+<CHECKBOX name="speak" resID="322" left="116" top="420" />
+<ROUNDBTN name="roundbutton1" resID="121,122,123" left="25" top="450" width="65" height="65" />
+<ROUNDBTN name="roundbutton2" resID="121,122,123" left="100" top="450" width="65" height="65" />
+</PANEL>
+
+
+<PANEL name="rightDlg" resID="312" left="960" top="0" width="240" height="630">
+<PANEL name="head_pic" left="10" top="10" width="40" height="40" />
+<LABEL name="rightDlg_user_name" left="60" top="30" width="190" height="24" text="测试马甲" />
+<LABEL left="60" top="50" width="100" height="24" text=" ID：" />
+<LABEL left="60" top="70" width="100" height="24" text="V币：" />
+<TAB settype="1" left="15" top="100" width="240" height="500">
+<TABS resID="324">
+<TILELIST />
+</TABS>
+<TABS resID="325">
+<USERLIST name="userList" left="0" top="0" width="240" height="500"/>
+</TABS>
+<TABS resID="323">
+<ROOMLIST name="roomList" left="0" top="0" width="240" height="500"/>
+</TABS>
+</TAB>
+
+
+<CHECKBOX name="join" resID="301" left="135" top="556" />
+<CHECKBOX name="join1" resID="302" left="67" top="548" />
+</PANEL>
+
+
+<PANEL name="channel_main" resID="300" left="160" top="0" width="830" height="640">
+<PANEL name="stageback" resID="316" left="15" top="15" width="800" height="275">
+	<VIDEO name="channel_video" left="200" top="12" width="320" height="240" />
+
+	<BUTTON name="channel_main_close" left="760" top="5" resID="2" />
+	<BUTTON name="channel_main_min" left="735" top="5" resID="1" />
+	<BUTTON name="channel_main_setting" left="710" top="5" resID="305" />
+
+</PANEL>
+
+	<CHECKBOX name="channel_main_left" resID="303" left="15" top="550" />
+	<CHECKBOX name="channel_main_right" resID="304" left="805" top="550" />
+
+	<CHECKBOX name="channel_button0" resID="314" left="150" top="532"/>
+	<COMBOBOX name="channel_dst_user" left="180" top="534" width="90" height="20" resID="317,318" />
+
+	<BUTTON name="channel_button1" resID="310" left="280" top="532" />
+	<BUTTON name="channel_button2" resID="315" left="310" top="532" />
+	<CHECKBOX name="channel_button3" resID="311" left="340" top="532" />
+	<BUTTON name="channel_button4" resID="309" left="370" top="532" />
+	<BUTTON name="channel_button5" resID="308" left="400" top="532" />
+	<BUTTON name="channel_button6" resID="306" left="430" top="532" />
+
+	<TEXTBOX name="channel_main_text" resID="0" left="154" top="568" width="450" height="30" />
+	<BUTTON name="channel_send_text" resID="319" left="604" top="563" />
+	<BUTTON name="channel_send_text_right" resID="320" left="637" top="563" />
+</PANEL>
+</STAGE>
+</Dlg>

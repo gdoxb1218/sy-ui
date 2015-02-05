@@ -1,0 +1,707 @@
+<Project version="3.0">
+<Name>dlg</Name>
+<Type>CUI</Type>
+<TargetName></TargetName>
+<TargetType>EXE</TargetType>
+<Folder name="GUI">
+	<File>..\GUI\GUI.h</File>
+	<Folder name="com">
+		<File>..\GUI\com\GCore.h</File>
+		<File>..\GUI\com\GEventCenter.h</File>
+		<File>..\GUI\com\GGraphics.h</File>
+		<File>..\GUI\com\GHook.h</File>
+		<File>..\GUI\com\GImageRes.h</File>
+		<File>..\GUI\com\GObject.h</File>
+		<File>..\GUI\com\GStruct.h</File>
+		<File>..\GUI\com\GTest.h</File>
+		<File>..\GUI\com\GXml.h</File>
+	</Folder>
+	<Folder name="controls">
+		<File>..\GUI\controls\GButton.h</File>
+		<File>..\GUI\controls\GLabel.h</File>
+		<File>..\GUI\controls\GPanel.h</File>
+		<File>..\GUI\controls\GScrollBar.h</File>
+		<File>..\GUI\controls\GStage.h</File>
+	</Folder>
+</Folder>
+	<File>dlg.cpp</File>
+	<File>work.cpp</File>
+<Attribute topline="1" x="1" y="20">..\GUI\GUI.h</Attribute>
+<Attribute topline="1" x="29" y="14">..\GUI\com\GCore.h</Attribute>
+<Attribute topline="1" x="1" y="16">..\GUI\com\GGraphics.h</Attribute>
+<Attribute topline="1" x="1" y="31">..\GUI\com\GImageRes.h</Attribute>
+<Attribute topline="1" x="41" y="9">..\GUI\com\GTest.h</Attribute>
+<FolderState>111</FolderState>
+<DefConfig>dlg - Win32 Debug</DefConfig>
+<Builder name="dlg - Win32 Release" type="Microsoft C++ Compiler" version="1.0">
+	<TargetName>dlg</TargetName>
+	<TargetType>EXE</TargetType>
+	<InterimDir>Release</InterimDir>
+	<IncPaths>
+		<Path>gdiplus/include</Path>
+		<Pattern>*\Include</Pattern>
+	</IncPaths>
+	<LibPaths>
+		<Pattern>*\Lib</Pattern>
+	</LibPaths>
+	<ExePaths>
+		<Pattern>*\Bin</Pattern>
+		<Pattern>*\MSDev98\Bin</Pattern>
+		<Pattern>*\Debugging Tools for Windows (x86)</Pattern>
+	</ExePaths>
+	<AutoDetect>
+		<Path>C:\Program Files\Microsoft Visual C++ Toolkit 2003</Path>
+		<Path>D:\Program Files\Microsoft Visual C++ Toolkit 2003</Path>
+		<Path>E:\Program Files\Microsoft Visual C++ Toolkit 2003</Path>
+		<Path>F:\Program Files\Microsoft Visual C++ Toolkit 2003</Path>
+		<Path>G:\Program Files\Microsoft Visual C++ Toolkit 2003</Path>
+		<Path>C:\Program Files\Debugging Tools for Windows (x86)</Path>
+		<Path>D:\Program Files\Debugging Tools for Windows (x86)</Path>
+		<Path>E:\Program Files\Debugging Tools for Windows (x86)</Path>
+		<Path>F:\Program Files\Debugging Tools for Windows (x86)</Path>
+		<Path>G:\Program Files\Debugging Tools for Windows (x86)</Path>
+		<Reg>\SOFTWARE\Microsoft\VisualStudio\6.0\Setup\Microsoft Visual C++|ProductDir</Reg>
+		<Reg>\SOFTWARE\Microsoft\VisualStudio\6.0\Setup|VsCommonDir</Reg>
+		<Reg>\SOFTWARE\Microsoft\Win32SDK\Directories|Install Dir</Reg>
+		<Reg>\SOFTWARE\Microsoft\MicrosoftSDK\InstalledSDKs\D2FF9F89-8AA2-4373-8A31-C838BF4DBBE1|Install Dir</Reg>
+	</AutoDetect>
+	<CompilerOptions>
+		<Category name="Code Generation">
+			<Option value="/G3" desc="Optimize for 80386 [/G3]"/>
+			<Option value="/G4" desc="Optimize for 80486 [/G4]"/>
+			<Option value="/G5" desc="Optimize for Pentium [/G5]"/>
+			<Option value="/G6" desc="Optimize for PPro, P-II, P-III [/G6]"/>
+			<Option value="/G7" desc="Optimize for Pentium 4 or Athlon [/G7]"/>
+			<Option value="/GA" desc="Optimize for Windows Application [/GA]"/>
+			<Option value="/EHsc" desc="Enable C++ EH [/EHsc, same as /GX]"/>
+			<Option value="/GR" desc="Enable run-time type information (RTTI) [/GR]"/>
+			<Option value="/GX" desc="Enable synchronous exception handling [/GX]"/>
+		</Category>
+		<Category name="Debugging">
+			<Option value="/Zi" desc="Generates complete debugging information [/Zi]"/>
+			<Option value="/ZI" desc="Enable Edit and Continue debug info [/ZI]"/>
+		</Category>
+		<Category name="Warnings">
+			<Option value="/Wall" desc="Enable all warnings [/Wall]"/>
+			<Option value="/WX" desc="Treat warnings as errors [/WX]"/>
+			<Option value="/W1" desc="Enable warnings level 1 [/W1]"/>
+			<Option value="/W2" desc="Enable warnings level 2 [/W2]"/>
+			<Option value="/W3" desc="Enable warnings level 3 [/W3]"/>
+			<Option value="/W4" desc="Enable warnings level 4 [/W4]"/>
+		</Category>
+		<Category name="Optimization">
+			<Option value="/O1" desc="Create small code [/O1]"/>
+			<Option value="/O2" desc="Create fast code [/O2]"/>
+			<Option value="/Og" desc="Use global optimizations [/Og]"/>
+			<Option value="/Ox" desc="Use maximum optimization (/Ob2gity /Gs) [/Ox]"/>
+			<Option value="/Od" desc="Disable optimization [/Od]"/>
+			<Option value="/Os" desc="Favors small code [/Os]"/>
+			<Option value="/Ot" desc="Favors fast code [/Ot]"/>
+		</Category>
+		<RawOptionsDebug enabled="1">
+			<Default>/nologo /W3 /GX /O2 /D &quot;WIN32&quot; /D &quot;NDEBUG&quot; /D &quot;_CONSOLE&quot; /D &quot;_MBCS&quot; /YX /FD /c</Default>
+			<User>/nologo /W3 /GX /O2  /D &quot;WIN32&quot; /D &quot;NDEBUG&quot; /D &quot;_WIN32&quot; /D &quot;_MBCS&quot; /YX /FD /c</User>
+		</RawOptionsDebug>
+		<RawOptionsRelease enabled="0">
+			<Default>/nologo /W3 /GX /O2 /D &quot;WIN32&quot; /D &quot;NDEBUG&quot; /D &quot;_CONSOLE&quot; /D &quot;_MBCS&quot; /YX /FD /c</Default>
+			<User>/nologo /W3 /GX /O2  /D &quot;WIN32&quot; /D &quot;NDEBUG&quot; /D &quot;_WIN32&quot; /D &quot;_MBCS&quot; /YX /FD /c</User>
+		</RawOptionsRelease>
+	</CompilerOptions>
+	<LinkerOptions>
+		<LibsDebug enabled="1">
+			<Default>
+				<Lib>user32.lib</Lib>
+			</Default>
+			<User>
+			</User>
+		</LibsDebug>
+		<LibsRelease enabled="0">
+			<Default>
+				<Lib>user32.lib</Lib>
+			</Default>
+			<User>
+			</User>
+		</LibsRelease>
+		<RawOptionsDebug enabled="1">
+			<Default>kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /machine:I386</Default>
+			<User>kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /machine:I386 /libpath:&quot;gdiplus/lib&quot;</User>
+		</RawOptionsDebug>
+		<RawOptionsRelease enabled="0">
+			<Default>kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /machine:I386</Default>
+			<User>kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /machine:I386 /libpath:&quot;gdiplus/lib&quot;</User>
+		</RawOptionsRelease>
+	</LinkerOptions>
+	<Configs>
+		<BuildLog enabled="0">$(CFRoot)\Build.log</BuildLog>
+		<LibExt>lib;a</LibExt>
+		<ObjExt>o;obj</ObjExt>
+		<ResExt>res</ResExt>
+	</Configs>
+	<Commands msghandler="Vc.mhr">
+		<Command name="C Compiler" io="1" rdos="0" sys="0">
+			<Program enabled="1">cl.exe</Program>
+			<Parameter enabled="1">/nologo -I$(IncPaths) $(CompilerOptions) /c &quot;$(FileName)&quot; /Fo&quot;$(Path)$(Name).obj&quot;</Parameter>
+			<FileExt enabled="1">c</FileExt>
+			<Target>$(PATH)$(NAME).obj</Target>
+			<TargetType>obj</TargetType>
+			<CurrentDir>$(FilePath)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Compiling $(FILENAME)...#81001</MsgID>
+		</Command>
+		<Command name="C++ Compiler" io="1" rdos="0" sys="0">
+			<Program enabled="1">cl.exe</Program>
+			<Parameter enabled="1">/nologo -I$(IncPaths) $(CompilerOptions) /c &quot;$(FileName)&quot; /Fo&quot;$(Path)$(Name).obj&quot;</Parameter>
+			<FileExt enabled="1">cpp;cxx;c++;cc</FileExt>
+			<Target>$(PATH)$(NAME).obj</Target>
+			<TargetType>obj</TargetType>
+			<CurrentDir>$(FilePath)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Compiling $(FILENAME)...#81001</MsgID>
+		</Command>
+		<Command name="Linker(CUI)" io="1" rdos="0" sys="0">
+			<Program enabled="1">link.exe</Program>
+			<Parameter enabled="1">/nologo $(LinkerOptions) /LIBPATH:$(LibPaths) /OUT:&quot;$(Target)&quot; $(Libs) $(ProjectFiles)</Parameter>
+			<FileExt enabled="1">o;obj;a;lib;res</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType>cui</TargetType>
+			<CurrentDir>$(ProjectFile)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Linking...#81002</MsgID>
+		</Command>
+		<Command name="Linker(GUI)" io="1" rdos="0" sys="0">
+			<Program enabled="1">link.exe</Program>
+			<Parameter enabled="1">/nologo $(LinkerOptions) /subsystem:windows /LIBPATH:$(LibPaths) /OUT:&quot;$(Target)&quot; $(Libs) $(ProjectFiles)</Parameter>
+			<FileExt enabled="1">o;obj;a;lib;res</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType>gui</TargetType>
+			<CurrentDir>$(ProjectFile)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Linking...#81002</MsgID>
+		</Command>
+		<Command name="Linker for DLL" io="1" rdos="0" sys="0">
+			<Program enabled="1">link.exe</Program>
+			<Parameter enabled="1">/nologo $(LinkerOptions) /DLL /LIBPATH:$(LibPaths) /OUT:&quot;$(Target)&quot; $(Libs) $(ProjectFiles) /DEF:$(DefFile)</Parameter>
+			<FileExt enabled="1">o;obj;a;lib;res</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType>dll</TargetType>
+			<CurrentDir>$(ProjectFile)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Linking...#81002</MsgID>
+		</Command>
+		<Command name="Linker for Lib" io="1" rdos="0" sys="0">
+			<Program enabled="1">link.exe</Program>
+			<Parameter enabled="1">/LIB /nologo $(LinkerOptions) /LIBPATH:$(LibPaths) /OUT:&quot;$(Target)&quot; $(Libs) $(ProjectFiles)</Parameter>
+			<FileExt enabled="1">o;obj</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType>lib</TargetType>
+			<CurrentDir>$(ProjectFile)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Linking...#81002</MsgID>
+		</Command>
+		<Command name="Resource Compiler" io="1" rdos="0" sys="0">
+			<Program enabled="1">rc.exe</Program>
+			<Parameter enabled="1">-I$(IncPaths) -Fo&quot;$(PATH)$(NAME).res&quot; &quot;$(FileName)&quot;</Parameter>
+			<FileExt enabled="1">rc</FileExt>
+			<Target>$(PATH)$(NAME).res</Target>
+			<TargetType>res</TargetType>
+			<CurrentDir>$(FilePath)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Compiling $(FILENAME)...#81001</MsgID>
+		</Command>
+		<Command name="Debugger" io="0" rdos="0" sys="0">
+			<Program enabled="0">cdb.exe</Program>
+			<Parameter enabled="0">cdebug.dll</Parameter>
+			<FileExt enabled="1">exe;dll</FileExt>
+			<Target></Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>#81003</MsgID>
+		</Command>
+		<Command name="Run" io="0" rdos="0" sys="0">
+			<Program enabled="0">$(Target)</Program>
+			<Parameter enabled="0">$(Parameters)</Parameter>
+			<FileExt enabled="1">exe</FileExt>
+			<Target></Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>#81004</MsgID>
+		</Command>
+		<Command name="Run DLL" io="0" rdos="0" sys="0">
+			<Program enabled="0">$(HostApp)</Program>
+			<Parameter enabled="0">$(Parameters)</Parameter>
+			<FileExt enabled="1">dll</FileExt>
+			<Target></Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>#81004</MsgID>
+		</Command>
+		<Command name="Clean Objects" io="1" rdos="0" sys="0">
+			<Program enabled="0">fdel.exe</Program>
+			<Parameter enabled="1">&quot;$(Path)$(Name).obj&quot; $(FileName)</Parameter>
+			<FileExt enabled="1">c;cpp;cxx;c++;cc</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID></MsgID>
+		</Command>
+		<Command name="Clean Resource" io="1" rdos="0" sys="0">
+			<Program enabled="0">fdel.exe</Program>
+			<Parameter enabled="1">&quot;$(Path)$(Name).res&quot; $(FileName)</Parameter>
+			<FileExt enabled="1">rc</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID></MsgID>
+		</Command>
+		<Command name="Clean Io" io="1" rdos="0" sys="0">
+			<Program enabled="0">fdel.exe</Program>
+			<Parameter enabled="0">&quot;$(Path)$(Name).obj&quot; -silent</Parameter>
+			<FileExt enabled="0">*.*</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID></MsgID>
+		</Command>
+		<Command name="Clean Target" io="1" rdos="0" sys="0">
+			<Program enabled="0">fdel.exe</Program>
+			<Parameter enabled="0">&quot;$(Target)&quot;</Parameter>
+			<FileExt enabled="1">*.*</FileExt>
+			<Target></Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID></MsgID>
+		</Command>
+	</Commands>
+	<Actions>
+		<Action name="Compile" depend="0">
+			<File>
+				<Command>"C Compiler""C++ Compiler""Resource Compiler"</Command>
+			</File>
+			<Project>
+			</Project>
+			<MsgID>Complete Compile $(FileName): $(Error) error(s), $(Warning) warning(s)\nGenerated $(Target)#81005</MsgID>
+			<ErrMsgID>Complete Compile $(FileName): $(Error) error(s), $(Warning) warning(s)#81006</ErrMsgID>
+			<PreAction></PreAction>
+			<PostAction con="0"></PostAction>
+		</Action>
+		<Action name="Build" depend="0">
+			<File>
+				<Command>"C Compiler""C++ Compiler""Resource Compiler"</Command>
+				<Command>"Linker(CUI)""Linker(GUI)""Linker for DLL""Linker for Lib"</Command>
+			</File>
+			<Project>
+				<Command>"C Compiler""C++ Compiler""Resource Compiler"</Command>
+				<Command>"Linker(CUI)""Linker(GUI)""Linker for DLL""Linker for Lib"</Command>
+			</Project>
+			<MsgID>Complete Build $(TargetName): $(Error) error(s), $(Warning) warning(s)\nGenerated $(Target)#81007</MsgID>
+			<ErrMsgID>Complete Build $(TargetName): $(Error) error(s), $(Warning) warning(s)#81008</ErrMsgID>
+			<PreAction></PreAction>
+			<PostAction con="0"></PostAction>
+		</Action>
+		<Action name="Make" depend="1">
+			<File>
+				<Command>"C Compiler""C++ Compiler""Resource Compiler"</Command>
+				<Command>"Linker(CUI)""Linker(GUI)""Linker for DLL""Linker for Lib"</Command>
+			</File>
+			<Project>
+				<Command>"C Compiler""C++ Compiler""Resource Compiler"</Command>
+				<Command>"Linker(CUI)""Linker(GUI)""Linker for DLL""Linker for Lib"</Command>
+			</Project>
+			<MsgID>Complete Make $(TargetName): $(Error) error(s), $(Warning) warning(s)\nGenerated $(Target)#81009</MsgID>
+			<ErrMsgID>Complete Make $(TargetName): $(Error) error(s), $(Warning) warning(s)#81010</ErrMsgID>
+			<PreAction></PreAction>
+			<PostAction con="0"></PostAction>
+		</Action>
+		<Action name="Run" depend="0">
+			<File>
+				<Action>"Make"</Action>
+				<Command>"Run""Run DLL"</Command>
+			</File>
+			<Project>
+				<Action>"Make"</Action>
+				<Command>"Run""Run DLL"</Command>
+			</Project>
+			<MsgID>#81011</MsgID>
+			<ErrMsgID>#81012</ErrMsgID>
+			<PreAction></PreAction>
+			<PostAction con="0"></PostAction>
+		</Action>
+		<Action name="Debug" depend="0">
+			<File>
+				<Action>"Make"</Action>
+				<Command>"Debugger"</Command>
+			</File>
+			<Project>
+				<Action>"Make"</Action>
+				<Command>"Debugger"</Command>
+			</Project>
+			<MsgID>#81013</MsgID>
+			<ErrMsgID>#81014</ErrMsgID>
+			<PreAction></PreAction>
+			<PostAction con="0"></PostAction>
+		</Action>
+		<Action name="Clean" depend="0">
+			<File>
+				<Command>"Clean Objects""Clean Resource"</Command>
+				<Command>"Clean Io"</Command>
+				<Command>"Clean Target"</Command>
+			</File>
+			<Project>
+				<Command>"Clean Objects""Clean Resource""Clean Io"</Command>
+				<Command>"Clean Io"</Command>
+				<Command>"Clean Target"</Command>
+			</Project>
+			<MsgID>Complete Clean $(TargetName)#81015</MsgID>
+			<ErrMsgID>Clean $(TargetName) error#81016</ErrMsgID>
+			<PreAction></PreAction>
+			<PostAction con="0"></PostAction>
+		</Action>
+	</Actions>
+</Builder>
+<Builder name="dlg - Win32 Debug" type="Microsoft C++ Compiler" version="1.0">
+	<TargetName>dlg</TargetName>
+	<TargetType>EXE</TargetType>
+	<InterimDir>Debug</InterimDir>
+	<IncPaths>
+		<Path>C:\Program Files (x86)\Microsoft Visual Studio\VC98\ATL\Include</Path>
+		<Path>C:\Program Files (x86)\Microsoft Visual Studio\VC98\Include</Path>
+		<Path>C:\Program Files (x86)\Microsoft Visual Studio\VC98\MFC\Include</Path>
+		<Pattern>*\Include</Pattern>
+	</IncPaths>
+	<LibPaths>
+		<Path>C:\Program Files (x86)\Microsoft Visual Studio\VC98\Lib</Path>
+		<Path>C:\Program Files (x86)\Microsoft Visual Studio\VC98\MFC\Lib</Path>
+		<Pattern>*\Lib</Pattern>
+	</LibPaths>
+	<ExePaths>
+		<Path>C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin</Path>
+		<Path>C:\Program Files (x86)\Microsoft Visual Studio\Common\MSDev98\Bin</Path>
+		<Path>C:\Program Files (x86)\Microsoft Visual Studio\Common\MSDev98\Bin</Path>
+		<Pattern>*\Bin</Pattern>
+		<Pattern>*\MSDev98\Bin</Pattern>
+		<Pattern>*\Debugging Tools for Windows (x86)</Pattern>
+	</ExePaths>
+	<AutoDetect>
+		<Path>C:\Program Files\Microsoft Visual C++ Toolkit 2003</Path>
+		<Path>D:\Program Files\Microsoft Visual C++ Toolkit 2003</Path>
+		<Path>E:\Program Files\Microsoft Visual C++ Toolkit 2003</Path>
+		<Path>F:\Program Files\Microsoft Visual C++ Toolkit 2003</Path>
+		<Path>G:\Program Files\Microsoft Visual C++ Toolkit 2003</Path>
+		<Path>C:\Program Files\Debugging Tools for Windows (x86)</Path>
+		<Path>D:\Program Files\Debugging Tools for Windows (x86)</Path>
+		<Path>E:\Program Files\Debugging Tools for Windows (x86)</Path>
+		<Path>F:\Program Files\Debugging Tools for Windows (x86)</Path>
+		<Path>G:\Program Files\Debugging Tools for Windows (x86)</Path>
+		<Reg>\SOFTWARE\Microsoft\VisualStudio\6.0\Setup\Microsoft Visual C++|ProductDir</Reg>
+		<Reg>\SOFTWARE\Microsoft\VisualStudio\6.0\Setup|VsCommonDir</Reg>
+		<Reg>\SOFTWARE\Microsoft\Win32SDK\Directories|Install Dir</Reg>
+		<Reg>\SOFTWARE\Microsoft\MicrosoftSDK\InstalledSDKs\D2FF9F89-8AA2-4373-8A31-C838BF4DBBE1|Install Dir</Reg>
+	</AutoDetect>
+	<CompilerOptions>
+		<Category name="Code Generation">
+			<Option value="/G3" desc="Optimize for 80386 [/G3]"/>
+			<Option value="/G4" desc="Optimize for 80486 [/G4]"/>
+			<Option value="/G5" desc="Optimize for Pentium [/G5]"/>
+			<Option value="/G6" desc="Optimize for PPro, P-II, P-III [/G6]"/>
+			<Option value="/G7" desc="Optimize for Pentium 4 or Athlon [/G7]"/>
+			<Option value="/GA" desc="Optimize for Windows Application [/GA]"/>
+			<Option value="/EHsc" desc="Enable C++ EH [/EHsc, same as /GX]"/>
+			<Option value="/GR" desc="Enable run-time type information (RTTI) [/GR]"/>
+			<Option value="/GX" desc="Enable synchronous exception handling [/GX]"/>
+		</Category>
+		<Category name="Debugging">
+			<Option value="/Zi" desc="Generates complete debugging information [/Zi]"/>
+			<Option value="/ZI" desc="Enable Edit and Continue debug info [/ZI]"/>
+		</Category>
+		<Category name="Warnings">
+			<Option value="/Wall" desc="Enable all warnings [/Wall]"/>
+			<Option value="/WX" desc="Treat warnings as errors [/WX]"/>
+			<Option value="/W1" desc="Enable warnings level 1 [/W1]"/>
+			<Option value="/W2" desc="Enable warnings level 2 [/W2]"/>
+			<Option value="/W3" desc="Enable warnings level 3 [/W3]"/>
+			<Option value="/W4" desc="Enable warnings level 4 [/W4]"/>
+		</Category>
+		<Category name="Optimization">
+			<Option value="/O1" desc="Create small code [/O1]"/>
+			<Option value="/O2" desc="Create fast code [/O2]"/>
+			<Option value="/Og" desc="Use global optimizations [/Og]"/>
+			<Option value="/Ox" desc="Use maximum optimization (/Ob2gity /Gs) [/Ox]"/>
+			<Option value="/Od" desc="Disable optimization [/Od]"/>
+			<Option value="/Os" desc="Favors small code [/Os]"/>
+			<Option value="/Ot" desc="Favors fast code [/Ot]"/>
+		</Category>
+		<RawOptionsDebug enabled="1">
+			<Default>/nologo /W3 /Gm /GX /ZI /Od /D &quot;WIN32&quot; /D &quot;_DEBUG&quot; /D &quot;_CONSOLE&quot; /D &quot;_MBCS&quot; /YX /FD /GZ /c</Default>
+			<User>/nologo /W3 /Gm /GX /ZI /Od /D &quot;WIN32&quot; /D &quot;_DEBUG&quot; /D &quot;_WIN32&quot; /D &quot;_MBCS&quot; /YX /FD /GZ /c</User>
+		</RawOptionsDebug>
+		<RawOptionsRelease enabled="0">
+			<Default>/nologo /W3 /Gm /GX /ZI /Od /D &quot;WIN32&quot; /D &quot;_DEBUG&quot; /D &quot;_CONSOLE&quot; /D &quot;_MBCS&quot; /YX /FD /GZ /c</Default>
+			<User>/nologo /W3 /Gm /GX /ZI /Od /D &quot;WIN32&quot; /D &quot;_DEBUG&quot; /D &quot;_WIN32&quot; /D &quot;_MBCS&quot; /YX /FD /GZ /c</User>
+		</RawOptionsRelease>
+	</CompilerOptions>
+	<LinkerOptions>
+		<LibsDebug enabled="1">
+			<Default>
+				<Lib>user32.lib</Lib>
+			</Default>
+			<User>
+			</User>
+		</LibsDebug>
+		<LibsRelease enabled="0">
+			<Default>
+				<Lib>user32.lib</Lib>
+			</Default>
+			<User>
+			</User>
+		</LibsRelease>
+		<RawOptionsDebug enabled="1">
+			<Default>kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /debug /machine:I386 /pdbtype:sept</Default>
+			<User>kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /debug /machine:I386 /pdbtype:sept</User>
+		</RawOptionsDebug>
+		<RawOptionsRelease enabled="0">
+			<Default>kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /debug /machine:I386 /pdbtype:sept</Default>
+			<User>kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /debug /machine:I386 /pdbtype:sept</User>
+		</RawOptionsRelease>
+	</LinkerOptions>
+	<Configs>
+		<BuildLog enabled="0">$(CFRoot)\Build.log</BuildLog>
+		<LibExt>lib;a</LibExt>
+		<ObjExt>o;obj</ObjExt>
+		<ResExt>res</ResExt>
+	</Configs>
+	<Commands msghandler="Vc.mhr">
+		<Command name="C Compiler" io="1" rdos="0" sys="0">
+			<Program enabled="1">cl.exe</Program>
+			<Parameter enabled="1">/nologo -I$(IncPaths) $(CompilerOptions) /c &quot;$(FileName)&quot; /Fo&quot;$(Path)$(Name).obj&quot;</Parameter>
+			<FileExt enabled="1">c</FileExt>
+			<Target>$(PATH)$(NAME).obj</Target>
+			<TargetType>obj</TargetType>
+			<CurrentDir>$(FilePath)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Compiling $(FILENAME)...#81001</MsgID>
+		</Command>
+		<Command name="C++ Compiler" io="1" rdos="0" sys="0">
+			<Program enabled="1">cl.exe</Program>
+			<Parameter enabled="1">/nologo -I$(IncPaths) $(CompilerOptions) /c &quot;$(FileName)&quot; /Fo&quot;$(Path)$(Name).obj&quot;</Parameter>
+			<FileExt enabled="1">cpp;cxx;c++;cc</FileExt>
+			<Target>$(PATH)$(NAME).obj</Target>
+			<TargetType>obj</TargetType>
+			<CurrentDir>$(FilePath)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Compiling $(FILENAME)...#81001</MsgID>
+		</Command>
+		<Command name="Linker(CUI)" io="1" rdos="0" sys="0">
+			<Program enabled="1">link.exe</Program>
+			<Parameter enabled="1">/nologo $(LinkerOptions) /LIBPATH:$(LibPaths) /OUT:&quot;$(Target)&quot; $(Libs) $(ProjectFiles)</Parameter>
+			<FileExt enabled="1">o;obj;a;lib;res</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType>cui</TargetType>
+			<CurrentDir>$(ProjectFile)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Linking...#81002</MsgID>
+		</Command>
+		<Command name="Linker(GUI)" io="1" rdos="0" sys="0">
+			<Program enabled="1">link.exe</Program>
+			<Parameter enabled="1">/nologo $(LinkerOptions) /subsystem:windows /LIBPATH:$(LibPaths) /OUT:&quot;$(Target)&quot; $(Libs) $(ProjectFiles)</Parameter>
+			<FileExt enabled="1">o;obj;a;lib;res</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType>gui</TargetType>
+			<CurrentDir>$(ProjectFile)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Linking...#81002</MsgID>
+		</Command>
+		<Command name="Linker for DLL" io="1" rdos="0" sys="0">
+			<Program enabled="1">link.exe</Program>
+			<Parameter enabled="1">/nologo $(LinkerOptions) /DLL /LIBPATH:$(LibPaths) /OUT:&quot;$(Target)&quot; $(Libs) $(ProjectFiles) /DEF:$(DefFile)</Parameter>
+			<FileExt enabled="1">o;obj;a;lib;res</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType>dll</TargetType>
+			<CurrentDir>$(ProjectFile)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Linking...#81002</MsgID>
+		</Command>
+		<Command name="Linker for Lib" io="1" rdos="0" sys="0">
+			<Program enabled="1">link.exe</Program>
+			<Parameter enabled="1">/LIB /nologo $(LinkerOptions) /LIBPATH:$(LibPaths) /OUT:&quot;$(Target)&quot; $(Libs) $(ProjectFiles)</Parameter>
+			<FileExt enabled="1">o;obj</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType>lib</TargetType>
+			<CurrentDir>$(ProjectFile)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Linking...#81002</MsgID>
+		</Command>
+		<Command name="Resource Compiler" io="1" rdos="0" sys="0">
+			<Program enabled="1">rc.exe</Program>
+			<Parameter enabled="1">-I$(IncPaths) -Fo&quot;$(PATH)$(NAME).res&quot; &quot;$(FileName)&quot;</Parameter>
+			<FileExt enabled="1">rc</FileExt>
+			<Target>$(PATH)$(NAME).res</Target>
+			<TargetType>res</TargetType>
+			<CurrentDir>$(FilePath)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Compiling $(FILENAME)...#81001</MsgID>
+		</Command>
+		<Command name="Debugger" io="0" rdos="0" sys="0">
+			<Program enabled="0">cdb.exe</Program>
+			<Parameter enabled="0">cdebug.dll</Parameter>
+			<FileExt enabled="1">exe;dll</FileExt>
+			<Target></Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>#81003</MsgID>
+		</Command>
+		<Command name="Run" io="0" rdos="0" sys="0">
+			<Program enabled="0">$(Target)</Program>
+			<Parameter enabled="0">$(Parameters)</Parameter>
+			<FileExt enabled="1">exe</FileExt>
+			<Target></Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>#81004</MsgID>
+		</Command>
+		<Command name="Run DLL" io="0" rdos="0" sys="0">
+			<Program enabled="0">$(HostApp)</Program>
+			<Parameter enabled="0">$(Parameters)</Parameter>
+			<FileExt enabled="1">dll</FileExt>
+			<Target></Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>#81004</MsgID>
+		</Command>
+		<Command name="Clean Objects" io="1" rdos="0" sys="0">
+			<Program enabled="0">fdel.exe</Program>
+			<Parameter enabled="1">&quot;$(Path)$(Name).obj&quot; $(FileName)</Parameter>
+			<FileExt enabled="1">c;cpp;cxx;c++;cc</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID></MsgID>
+		</Command>
+		<Command name="Clean Resource" io="1" rdos="0" sys="0">
+			<Program enabled="0">fdel.exe</Program>
+			<Parameter enabled="1">&quot;$(Path)$(Name).res&quot; $(FileName)</Parameter>
+			<FileExt enabled="1">rc</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID></MsgID>
+		</Command>
+		<Command name="Clean Io" io="1" rdos="0" sys="0">
+			<Program enabled="0">fdel.exe</Program>
+			<Parameter enabled="0">&quot;$(Path)$(Name).obj&quot; -silent</Parameter>
+			<FileExt enabled="0">*.*</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID></MsgID>
+		</Command>
+		<Command name="Clean Target" io="1" rdos="0" sys="0">
+			<Program enabled="0">fdel.exe</Program>
+			<Parameter enabled="0">&quot;$(Target)&quot;</Parameter>
+			<FileExt enabled="1">*.*</FileExt>
+			<Target></Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID></MsgID>
+		</Command>
+	</Commands>
+	<Actions>
+		<Action name="Compile" depend="0">
+			<File>
+				<Command>"C Compiler""C++ Compiler""Resource Compiler"</Command>
+			</File>
+			<Project>
+			</Project>
+			<MsgID>Complete Compile $(FileName): $(Error) error(s), $(Warning) warning(s)\nGenerated $(Target)#81005</MsgID>
+			<ErrMsgID>Complete Compile $(FileName): $(Error) error(s), $(Warning) warning(s)#81006</ErrMsgID>
+			<PreAction></PreAction>
+			<PostAction con="0"></PostAction>
+		</Action>
+		<Action name="Build" depend="0">
+			<File>
+				<Command>"C Compiler""C++ Compiler""Resource Compiler"</Command>
+				<Command>"Linker(CUI)""Linker(GUI)""Linker for DLL""Linker for Lib"</Command>
+			</File>
+			<Project>
+				<Command>"C Compiler""C++ Compiler""Resource Compiler"</Command>
+				<Command>"Linker(CUI)""Linker(GUI)""Linker for DLL""Linker for Lib"</Command>
+			</Project>
+			<MsgID>Complete Build $(TargetName): $(Error) error(s), $(Warning) warning(s)\nGenerated $(Target)#81007</MsgID>
+			<ErrMsgID>Complete Build $(TargetName): $(Error) error(s), $(Warning) warning(s)#81008</ErrMsgID>
+			<PreAction></PreAction>
+			<PostAction con="0"></PostAction>
+		</Action>
+		<Action name="Make" depend="1">
+			<File>
+				<Command>"C Compiler""C++ Compiler""Resource Compiler"</Command>
+				<Command>"Linker(CUI)""Linker(GUI)""Linker for DLL""Linker for Lib"</Command>
+			</File>
+			<Project>
+				<Command>"C Compiler""C++ Compiler""Resource Compiler"</Command>
+				<Command>"Linker(CUI)""Linker(GUI)""Linker for DLL""Linker for Lib"</Command>
+			</Project>
+			<MsgID>Complete Make $(TargetName): $(Error) error(s), $(Warning) warning(s)\nGenerated $(Target)#81009</MsgID>
+			<ErrMsgID>Complete Make $(TargetName): $(Error) error(s), $(Warning) warning(s)#81010</ErrMsgID>
+			<PreAction></PreAction>
+			<PostAction con="0"></PostAction>
+		</Action>
+		<Action name="Run" depend="0">
+			<File>
+				<Action>"Make"</Action>
+				<Command>"Run""Run DLL"</Command>
+			</File>
+			<Project>
+				<Action>"Make"</Action>
+				<Command>"Run""Run DLL"</Command>
+			</Project>
+			<MsgID>#81011</MsgID>
+			<ErrMsgID>#81012</ErrMsgID>
+			<PreAction></PreAction>
+			<PostAction con="0"></PostAction>
+		</Action>
+		<Action name="Debug" depend="0">
+			<File>
+				<Action>"Make"</Action>
+				<Command>"Debugger"</Command>
+			</File>
+			<Project>
+				<Action>"Make"</Action>
+				<Command>"Debugger"</Command>
+			</Project>
+			<MsgID>#81013</MsgID>
+			<ErrMsgID>#81014</ErrMsgID>
+			<PreAction></PreAction>
+			<PostAction con="0"></PostAction>
+		</Action>
+		<Action name="Clean" depend="0">
+			<File>
+				<Command>"Clean Objects""Clean Resource"</Command>
+				<Command>"Clean Io"</Command>
+				<Command>"Clean Target"</Command>
+			</File>
+			<Project>
+				<Command>"Clean Objects""Clean Resource""Clean Io"</Command>
+				<Command>"Clean Io"</Command>
+				<Command>"Clean Target"</Command>
+			</Project>
+			<MsgID>Complete Clean $(TargetName)#81015</MsgID>
+			<ErrMsgID>Clean $(TargetName) error#81016</ErrMsgID>
+			<PreAction></PreAction>
+			<PostAction con="0"></PostAction>
+		</Action>
+	</Actions>
+</Builder>
+</Project>
