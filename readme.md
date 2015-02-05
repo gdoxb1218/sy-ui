@@ -15,6 +15,7 @@ void init()
 	MOUSE_CLICK("btn_ok",OnBtnOKClick);
 }
 ```
+```
 int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine, int nCmdShow)
 {
 	WCHAR buff[MAX_PATH];
@@ -37,8 +38,8 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine
 	startDirectUI();
     return 0;
 }
-
 ```
+
 sy-ui v0.1 Copyright (c) 2015 sy-ui.com, 
 http://sy-ui.com
 Released under MIT license
